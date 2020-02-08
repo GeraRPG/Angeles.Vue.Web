@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <b-row :class="'mt-5'">
+    <div class="col-lg-12">
+      <h1 class=" text-left">Pasteleria Angeles</h1>
+    </div>
+  </b-row>
 </template>

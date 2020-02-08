@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <h1>Cake´s</h1>
     </div>
 </template>
 <script>
@@ -22,6 +22,9 @@ export default {
             .catch((e) => {
                 console.log('Error' + e);
             })
+        },
+        obtenerCakes(){
+        
         }
     }
 }

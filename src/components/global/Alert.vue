@@ -13,9 +13,10 @@
 </template>
 <script>
 export default {
+    name: 'Alert',
     data(){
         return { 
-            mensaje: {color:'success', text: ''},
+            mensaje: {color:'success', text: 'Hola'},
             dismissSecs: 5,
             dismissCountDown: 0
         };

@@ -25,6 +25,11 @@ export default new Router({
       path: '/cakes',
       name: 'cakes',
       component: () => import(/* webpackChunkName: "cakes" */ './views/Cakes.vue')
+    },
+    {
+      path: '/pedido',
+      name: 'pedido',
+      component: () => import(/* webpackChunkName: "pedido" */ './views/pedido.vue')
     }
   ]
 })
