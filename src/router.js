@@ -30,6 +30,11 @@ export default new Router({
       path: '/pedido',
       name: 'pedido',
       component: () => import(/* webpackChunkName: "pedido" */ './views/pedido.vue')
+    },
+    {
+      path: '/contacto',
+      name: 'contacto',
+      component: () => import(/* webpacChunkName: "contacto" */ './views/Contacto.vue')
     }
   ]
 })

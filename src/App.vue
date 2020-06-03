@@ -11,6 +11,7 @@
             <b-nav-item :to="'/about'">Nosotros</b-nav-item>
             <b-nav-item :to="'/cakes'">Pasteles</b-nav-item>
             <b-nav-item :to="'/pedido'">Pedido</b-nav-item>
+            <b-nav-item :to="'/contacto'">Contacto</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -32,15 +33,29 @@
         </b-collapse>
       </b-navbar>
     </div>
-    <div :class="'mt-5 container'">
+    <div :style="{marginTop: '70px'}">
       <router-view/>
     </div>
+    <FooterAngeles/>
   </div>
 </template>
-
+<script>
+import FooterAngeles from './components/global/Footer.vue'
+export default {
+  components: {
+    FooterAngeles
+  }
+}
+</script>
 <style>
+.bg-primario{
+  background: #D38399;
+}
+.bg-secundario{
+  background: #DDA6B6;
+}
 .nav-pink{
-  background: #fd3481 !important;
+  background: rgb(235, 141, 196) !important;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
