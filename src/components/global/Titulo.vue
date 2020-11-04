@@ -1,9 +1,9 @@
 <template>
-    <h1 class="text-left">{{ titulo }}</h1>
+    <h1 class="text-left color-primario">{{ titulo }}</h1>
 </template>
 <script>
 export default {
-    name: 'Title',
+    name: 'Titulo',
     props: {
         titulo: String
     }

@@ -20,11 +20,11 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="form-group">
-                        <textarea class="form-control" placeholder="Descripcion" v-model="Mensaje.mensaje"></textarea>
+                        <textarea class="form-control" :style="{height: '150px'}" placeholder="Mensaje" v-model="Mensaje.mensaje"></textarea>
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-9">
-                    <b-button class="btn btn-block btn-primary" type="submit">Enviar</b-button>
+                    <b-button class="btn btn-block btn-primary"  type="submit">Enviar</b-button>
                 </div>
             </div>
         </form>
