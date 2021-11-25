@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Alert></Alert>
+        <alert></alert>
         <form @submit.prevent="enviar(Mensaje)">
             <div class="row">
                 <div class="col-lg-6">
@@ -28,27 +28,27 @@
                 </div>
             </div>
         </form>
-        <div v-for="(item, index) in Mensaje" :key="index">
-            <h1>{{item.nombre}}</h1>
+        <div v-for="(item, index) in Mensajes" :key="index">
+            <h1>{{console.log(item)}}</h1>
         </div>
     </div>
 </template>
 <script>
-import Alert from "./global/Alert"
+import Alert from "./global/Alert";
 export default {
     name: 'FormContacto',
     components: {
-        Alert
-    },
+        "alert":Alert
+    }, 
     data() {
         return {
-            Mensaje: {}
+            Mensajes: [{}]
         }
     },
     methods:{
-        enviar(item) {
-            console.log(item)
-            console.log("Nombre")
+        enviar(Mensaje) {
+            this.Mensajes.push(Mensaje)
+            console.log(Mensaje);
             //this.showAlert()
             //this.mensaje.color = 'success'
             //this.mensaje.text = 'Hola'
